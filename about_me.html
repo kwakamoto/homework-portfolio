@@ -1,0 +1,35 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:200,300' rel='stylesheet' type='text/css'>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(34.0500, -118.2500),
+		    zoom:9,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<title>A little about Kristen</title>
+</head>
+<body>
+	<h1>A little about Kristen</h1>
+
+	<nav>
+
+	</nav>
+
+	<img id="profile_pic" src="images/face_0723.png" alt="Profile Pic">
+
+	<p>Hello! My name is Kristen and I'm a <a href="http://kristenkimiko.com" target="_blank">UX Designer</a> currently located in Los Angeles, California. As a UX designer, I like figuring out ways to making the world better. When I'm not making wireframes or user testing, you can find me creating <a href="http://thekimicollective.com" target="_blank">calligraphy</a> or on my next adventure. I'm currently learning to exercise the technical part of my brain -- come follow my journey as I learn about front end web development!</p>
+
+	<div id="googleMap"></div>
+
+</body>
+
+</html>
+
