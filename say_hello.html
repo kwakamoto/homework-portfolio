@@ -4,10 +4,30 @@
 	<title>
 		Say Hello!
 	</title>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(34.0500, -118.2500),
+		    zoom:9,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 </head>
 <body>
 	<h1>Say Hello!</h1>
-	<h2>Although snail mail will always have a soft spot in my heart, I Feel free to email me at <a href="mailto:kristen.wakamoto@gmail.com?Subject=Hello!" target="_blank"></a>kristen.wakamoto@gmail.com</a>
+	<hr>
+	<nav>
+		<a href="about_me.html">About Me</a> |
+		<a href="portfolio.html">Portfolio</a>
+	</nav>
+	<hr>
+	<div id="googleMap"></div>
+
+	<p>Although snail mail will always have a soft spot in my heart, please feel free to email me at <a href="mailto:kristen.wakamoto@gmail.com?Subject=Hello!" target="_blank">kristen.wakamoto@gmail.com</a> I'd love to hear from you! </p>
 
 </body>
 </html>
